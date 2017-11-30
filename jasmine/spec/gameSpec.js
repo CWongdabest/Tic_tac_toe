@@ -6,7 +6,7 @@ describe('Game', function() {
 
   beforeEach(function() {
     player1 = new Player('X');
-    player2 = new Player('Y');
+    player2 = new Player('O');
     game = new Game(player1, player2);
   });
 
@@ -15,13 +15,14 @@ describe('Game', function() {
     });
 
     it("let the player take a step", function() {
-      game.currentPlayerTakeStep(6)
+      game.currentPlayerTakeStep(6);
       expect(player1.steps()).toEqual([6]);
     });
 
-    // it("alternates the current player", function() {
-    //   expect(game.currentPlayer()).toEqual('X');
-    // });
+    it("alternates the current player", function() {
+      game.currentPlayerTakeStep(6);
+      expect(game.currentPlayer()).toEqual('O');
+    });
 
 
 

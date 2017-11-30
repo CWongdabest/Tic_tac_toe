@@ -10,16 +10,10 @@ describe('Player', function() {
       expect(player.name()).toEqual('X');
     });
 
-    it("allows player to add a step", function() {
-      expect(player.addStep(1)).toEqual(1);
-    });
-
     it("stores the player's steps", function() {
       player.addStep(1);
-      expect(player.steps()).toEqual([1]);
+      player.addStep(4);
+      expect(player.steps()).toEqual([1, 4]);
     });
-
-
-
-
+    
 });

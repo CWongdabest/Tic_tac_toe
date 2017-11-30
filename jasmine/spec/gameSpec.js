@@ -11,7 +11,7 @@ describe('Game', function() {
   });
 
     it("stores the current player", function() {
-      expect(game.currentPlayer()).toEqual('X');
+      expect(game.currentPlayer().name()).toEqual('X');
     });
 
     it("let the player take a step", function() {
@@ -21,7 +21,7 @@ describe('Game', function() {
 
     it("alternates the current player", function() {
       game.currentPlayerTakeStep(6);
-      expect(game.currentPlayer()).toEqual('O');
+      expect(game.currentPlayer().name()).toEqual('O');
     });
 
 

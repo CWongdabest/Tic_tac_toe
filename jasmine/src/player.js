@@ -12,7 +12,6 @@
 
     function addStep(num) {
       player_steps.push(num);
-      return num;
     }
 
     function steps() {

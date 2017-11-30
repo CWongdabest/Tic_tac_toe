@@ -1,6 +1,6 @@
 # Tic_tac_toe
 
-#Business logic
+# Business logic
 
 1. Two players (X and O). Current player alternates.  
 
@@ -14,4 +14,4 @@
 
 6. If a player wins, game is over and winner will be declared
 
-7. If all the fields are taken, but there's no winner, a game is over but no winner will be declared 
+7. If all the fields are taken, but there's no winner, a game is over but no winner will be declared
